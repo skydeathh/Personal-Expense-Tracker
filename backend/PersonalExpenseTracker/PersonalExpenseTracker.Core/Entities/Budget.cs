@@ -1,11 +1,11 @@
 ﻿namespace PersonalExpenseTracker.Core.Entities
 {
-    public class Transaction
+    public class Budget
     {
         public int Id { get; set; }
         public decimal Amount { get; set; }
-        public  string Description { get; set; }
-        public DateTime Date { get; set;}
+        public int Mounth { get; set; }
+        public int Year { get; set; }
 
         public Guid UserId { get; set; }
         public User User { get; set; }
