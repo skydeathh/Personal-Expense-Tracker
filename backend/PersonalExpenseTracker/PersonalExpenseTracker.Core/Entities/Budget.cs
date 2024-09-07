@@ -3,6 +3,7 @@
     public class Budget
     {
         public int Id { get; set; }
+        public int Name {  get; set; }
         public decimal Amount { get; set; }
         public int Mounth { get; set; }
         public int Year { get; set; }

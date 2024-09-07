@@ -4,9 +4,9 @@ namespace PersonalExpenseTracker.Core.Repositories
 {
     public interface ITransactionsRepository
     {
-        public Task AddTransaction(Transaction transaction);
-        public Task UpdateTransaction(Transaction transaction);
-        public Task DeleteTransaction(Transaction transaction);
-        public Task<Transaction> GetTransactionsByCategory(string category);
+        Task AddTransactionAsync(Transaction transaction);
+        Task UpdateTransactionAsync(Transaction transaction);
+        Task DeleteTransactionAsync(int id);
+        Task<Transaction> GetTransactionsByCategoryAsync(string category);
     }
 }
